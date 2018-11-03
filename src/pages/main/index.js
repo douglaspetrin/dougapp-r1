@@ -56,12 +56,12 @@ export default class Main extends Component {
             <article key={product._id}>
                 <strong>{product.title}</strong>
                 <p>{product.description}</p>
-                <Link to={`/products/${product._id}`}>Acessar</Link>
+                <Link to={`/products/${product._id}`}>Load more</Link>
             </article>
         ))};
             <div className="actions">
-            <button disabled={page === 1} onClick={this.prevPage}> Anterior </button>
-            <button disabled={ page === productInfo.pages } onClick={this.nextPage}> Próximo </button>
+            <button disabled={page === 1} onClick={this.prevPage}> Prev </button>
+            <button disabled={ page === productInfo.pages } onClick={this.nextPage}> Next </button>
 
             </div> 
         </div> 
